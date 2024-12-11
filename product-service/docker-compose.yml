@@ -7,6 +7,6 @@ services:
     environment:
         MONGO_INITDB_ROOT_USERNAME: root
         MONGO_INITDB_ROOT_PASSWORD: password
-        MONGO_INITDB_DATABASE: product-service
+        MONGO_INITDB_DATABASE: admin
     volumes:
       - ./data:/data/db
