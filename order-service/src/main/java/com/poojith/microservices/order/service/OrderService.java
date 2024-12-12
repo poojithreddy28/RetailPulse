@@ -28,6 +28,7 @@ public class OrderService {
         order.setQuantity(orderRequest.quantity());
         order.setSkuCode(orderRequest.skuCode());
         // save order to database
+        orderRepository.save(order);
 
 
 
