@@ -23,6 +23,18 @@ This repository contains microservices developed using Spring Boot, demonstratin
   - **MySQL:** Database to store order details.
   - **Flyway:** For database schema versioning and migrations.
 
+### 3. **Inventory Service**
+- **Description:** Manages inventory details and tracks product stock levels in the system.
+- **Features:**
+  - **Update Inventory:** Updates stock levels when orders are placed or products are added.
+  - **Retrieve Inventory:** Provides details of current stock levels for products.
+  - **Read Inventory:** Checks stock in inventory using SkuCode and Quantity.
+- **Tech Stack:**
+  - **Spring Boot:** For REST API development.
+  - **MySQL:** Database to store inventory details.
+  - **Flyway:** For database schema versioning and migrations.
+  - **JUnit:** For unit and integration testing of inventory-related functionalities.
+
 ## Technologies Used
 - **Spring Boot:** For building microservices.
 - **Flyway:** Database versioning for `order-service`.
