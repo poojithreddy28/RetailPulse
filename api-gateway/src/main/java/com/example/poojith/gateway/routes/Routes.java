@@ -20,7 +20,7 @@ public class Routes {
     @Bean
     public RouterFunction<ServerResponse> orderServiceRoute(){
         return GatewayRouterFunctions.route("order-service")
-                .route(RequestPredicates.GET("/api/order"), HandlerFunctions.http("http://localhost:8081"))
+                .route(RequestPredicates.POST("/api/order"), HandlerFunctions.http("http://localhost:8081"))
                 .build();
     }
 
