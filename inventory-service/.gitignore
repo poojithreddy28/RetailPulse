@@ -12,7 +12,11 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+# Ignore MySQL data files
+inventory-service/docker/mysql/data/#*
+inventory-service/docker/mysql/data/ibdata*
+inventory-service/docker/mysql/data/#innodb_redo/
+inventory-service/docker/mysql/data/#innodb_redo/*
 ### IntelliJ IDEA ###
 .idea
 *.iws
