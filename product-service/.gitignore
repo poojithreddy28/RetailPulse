@@ -29,6 +29,10 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-
+# MongoDB WiredTiger files and logs
+product-service/data/WiredTiger.*
+product-service/data/diagnostic.data/
+product-service/data/journal/
+product-service/data/*.wt
 ### VS Code ###
 .vscode/
