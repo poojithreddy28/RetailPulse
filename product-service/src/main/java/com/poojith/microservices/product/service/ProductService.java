@@ -24,13 +24,13 @@ public class ProductService {
         Product product = Product.builder()
                 .name(productRequest.name())
                 .description(productRequest.description())
-//                .skuCode(productRequest.skuCode())
+                 .skuCode(productRequest.skuCode())
                 .price(productRequest.price())
                 .build();
         productRepository.save(product);
         log.info("Product created successfully");
         return new ProductResponse(product.getId(), product.getName(), product.getDescription(),
-//                product.getSkuCode(),
+                product.getSkuCode(),
                 product.getPrice());
     }
 
@@ -38,7 +38,7 @@ public class ProductService {
         return productRepository.findAll()
                 .stream()
                 .map(product -> new ProductResponse(product.getId(), product.getName(), product.getDescription(),
-//                        product.getSkuCode(),
+                        product.getSkuCode(),
                         product.getPrice()))
                 .toList();
     }
