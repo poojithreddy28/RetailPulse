@@ -35,9 +35,23 @@ This repository contains microservices developed using Spring Boot, demonstratin
   - **Flyway:** For database schema versioning and migrations.
   - **JUnit:** For unit and integration testing of inventory-related functionalities.
 
+### 4. **API Gateway**
+- **Description:** Acts as a single entry point for all microservices, providing routing, authentication, and fault tolerance.
+- **Features:**
+  - **Swagger Aggregation:** Aggregates API documentation from all microservices.
+  - **Resilience4J Circuit Breaker:** Adds fault tolerance for service communication.
+  - **OAuth2 Security:** Configured authentication using Keycloak with JWT tokens.
+- **Tech Stack:**
+  - **Spring Boot:** For API gateway development.
+  - **Keycloak:** For authentication and authorization.
+  - **Resilience4J:** For circuit breaker implementation.
+
+
 ## Technologies Used
 - **Spring Boot:** For building microservices.
 - **Flyway:** Database versioning for `order-service`.
 - **MongoDB TestContainer:** For integration testing in `product-service`.
 - **MySQL:** Database for `order-service`.
 - **MongoDB:** Database for `product-service`.
+- **Resilience4J:** Circuit breaker for fault-tolerant communication.
+- **Keycloak:** For authentication and authorization in `api-gateway`.
