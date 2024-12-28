@@ -23,4 +23,6 @@ public class OpenAPIConfig {
                 .description("refer to product service documentation")
                 .url("http://springdoc.org"));
     }
+
+
 }
