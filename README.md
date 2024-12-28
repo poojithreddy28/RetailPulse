@@ -53,6 +53,17 @@ This repository contains microservices developed using Spring Boot, demonstratin
   - **Spring Boot:** For API gateway development.
   - **Keycloak:** For authentication and authorization.
   - **Resilience4J:** For circuit breaker implementation.
+  - 
+### 5. **Notification Service**
+- **Description:** Handles customer notifications for order-related events.
+- **Features:**
+  - **Order Confirmation Emails:** Sends email notifications to customers upon successful order placement.
+  - **Kafka Consumer:** Consumes order placement events from Kafka topics and triggers email notifications.
+- **Tech Stack:**
+  - **Spring Boot:** For service development.
+  - **JavaMailSender:** For email functionality.
+  - **Kafka:** For consuming order placement events asynchronously.
+  - **MySQL:** (Optional) For storing notification logs or templates.
 
 ## Technologies Used
 - **Spring Boot:** For building microservices.
@@ -63,3 +74,4 @@ This repository contains microservices developed using Spring Boot, demonstratin
 - **Kafka:** For asynchronous communication.
 - **Resilience4J:** Circuit breaker for fault-tolerant communication.
 - **Keycloak:** For authentication and authorization in `api-gateway`.
+- **JavaMailSender:** For email notifications in `notification-service`.
