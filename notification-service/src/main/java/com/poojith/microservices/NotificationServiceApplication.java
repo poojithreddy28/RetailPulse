@@ -1,4 +1,4 @@
-package com.poojith.microservices.notification;
+package com.poojith.microservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
