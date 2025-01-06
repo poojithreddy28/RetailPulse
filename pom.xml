@@ -8,7 +8,7 @@
         <version>3.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.programming.poojith</groupId>
+    <groupId>com.poojith.microservices</groupId>
     <artifactId>spring-boot-3-microservices</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -34,13 +34,13 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>poojithreddy18/new-${project.artifactId}</name>
+                        <name>docker.io/poojithreddy18/new-${project.artifactId}</name>
                         <builder>dashaun/builder:tiny</builder>
                         <publish>true</publish>
                     </image>
                     <docker>
                         <publishRegistry>
-                            <username>saiupadhyayula007</username>
+                            <username>poojithreddy18</username>
                             <password>${dockerPassword}</password>
                         </publishRegistry>
                     </docker>

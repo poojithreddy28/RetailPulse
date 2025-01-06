@@ -99,19 +99,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<image>
-						<name>poojithreddy18/new-${project.artifactId}</name>
-						<builder>dashaun/builder:tiny</builder>
-						<publish>true</publish>
-						<docker>
-							<publishRegistry>
-								<username>poojithreddy18</username>
-								<password></password>
-							</publishRegistry>
-						</docker>
-					</image>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
