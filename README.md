@@ -2,6 +2,9 @@
 
 This repository contains microservices developed using Spring Boot, demonstrating RESTful API development, database integration, asynchronous communication, observability, testing practices, and Kubernetes deployment.
 
+## Technical Architecture
+![SpringBoot-Microservices](https://github.com/user-attachments/assets/0d8f2a84-ccb7-4a94-a0fb-bddb06a87980)
+
 ## Services
 
 ### 1. **Product Service** 📦
@@ -134,5 +137,3 @@ This project includes comprehensive Kubernetes deployment configurations for all
 - **JavaMailSender:** For email notifications in `notification-service`.
 - **Kubernetes:** For deploying and managing services.
 - **KinD:** For local Kubernetes cluster setup.
-
-![img.png](img.png)
