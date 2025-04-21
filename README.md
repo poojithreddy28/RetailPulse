@@ -1,4 +1,4 @@
-# SpringBoot Microservices Project 🚀
+# RetailPulse - Microservices Project 🚀
 
 This repository contains microservices developed using Spring Boot, demonstrating RESTful API development, database integration, asynchronous communication, observability, testing practices, and Kubernetes deployment.
 
